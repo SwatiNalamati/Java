@@ -26,12 +26,14 @@ public class Temperature {
 
 		String f = s.next().toLowerCase();
 		String c = s.next().toLowerCase();
+		System.out.println(f);
 
 		if (f.equals("f")) {
 			System.out.println("Enter a fahrenheit value to convert to celsius");
 
 			System.out.println("Note:" + "/n" + "Take fahrenheit as float value");
-			float temp = Float.parseFloat(f);
+
+			float temp = s.nextFloat();
 
 			fahrenheit(temp);
 
@@ -41,7 +43,7 @@ public class Temperature {
 			System.out.println("Enter a celsius value to convert to fahrenheit");
 
 			System.out.println("Note:" + "/n" + "Take celsius as int value");
-			int temp = Integer.parseInt(c);
+			int temp = s.nextInt();
 
 			celsuis(temp);
 
