@@ -26,7 +26,7 @@ public class Difference {
 			// int positive = Math.abs(difference);
 
 			int positive = difference * -1;
-
+			// negative*negative is positive
 			int result = positive * 2;
 
 			System.out.println(difference);
