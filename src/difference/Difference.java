@@ -23,7 +23,9 @@ public class Difference {
 		else if (i > 21) {
 
 			int difference = 21 - i;
-			int positive = Math.abs(difference);
+			// int positive = Math.abs(difference);
+
+			int positive = difference * -1;
 
 			int result = positive * 2;
 
