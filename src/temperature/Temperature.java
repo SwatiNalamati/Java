@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Temperature {
 	static Scanner s = new Scanner(System.in);
 
-	static float fahrenheit(float temp) {
+	static int fahrenheit(float temp) {
 
-		float convertCal = (float) ((temp - 32) * 0.5556);
+		int convertCal = (int) ((temp - 32) * 0.5556f);
 		return convertCal;
 
 	}
 
-	static int celsuis(int temp) {
+	static float celsuis(int temp) {
 
-		int convertCal = (int) ((temp * 0.5556) + 32);
+		float convertCal = ((temp * 1.8f) + 32);
 		return convertCal;
 
 	}
@@ -24,28 +24,33 @@ public class Temperature {
 		System.out.println("Enter a 'f' for fahrenheit to celsius");
 		System.out.println("Enter a 'c' for celsius to fahrenheit ");
 
-		String f = s.next().toLowerCase();
-		String c = s.next().toLowerCase();
-		System.out.println(f);
+		String string = s.next().toLowerCase();
 
-		if (f.equals("f")) {
+		if (string.equals("f")) {
 			System.out.println("Enter a fahrenheit value to convert to celsius");
 
-			System.out.println("Note:" + "/n" + "Take fahrenheit as float value");
+			System.out.println("Note:");
+			System.out.println("Take fahrenheit as float value");
 
 			float temp = s.nextFloat();
 
-			fahrenheit(temp);
+			int tresult = fahrenheit(temp);
+
+			System.out.println(tresult);
 
 		}
 
-		if (c.equals("c")) {
+		else if (string.equals("c")) {
 			System.out.println("Enter a celsius value to convert to fahrenheit");
 
-			System.out.println("Note:" + "/n" + "Take celsius as int value");
+			System.out.println("Note:");
+			System.out.println("Take celsius as int value");
+
 			int temp = s.nextInt();
 
-			celsuis(temp);
+			float cresult = celsuis(temp);
+
+			System.out.println(cresult);
 
 		}
 
