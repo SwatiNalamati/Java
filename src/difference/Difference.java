@@ -27,8 +27,8 @@ public class Difference {
 			// negative*negative is positive
 			int result = positive * 2;
 
-			// System.out.println(diff);
-			// System.out.println(positive);
+			System.out.println(diff);
+			System.out.println(positive);
 			System.out.println(result);
 		}
 		return diff;
