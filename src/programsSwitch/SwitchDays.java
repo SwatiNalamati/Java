@@ -19,7 +19,7 @@ public class SwitchDays {
 		case 2:
 
 			System.out.println("28 days");
-			break
+			break;
 
 		case 3:
 
