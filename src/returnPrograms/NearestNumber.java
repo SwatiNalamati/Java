@@ -9,11 +9,12 @@ public class NearestNumber {
 		int c = 10 - a;
 		int d = 10 - b;
 
-		if (c <= d) {
+		if (d < c) {
 
 			return a;
 
-		} else if (c >= d) {
+		}
+		if (d > c) {
 
 			return b;
 
@@ -22,7 +23,6 @@ public class NearestNumber {
 			System.out.println(0);
 
 		}
-
 		return 0;
 
 	}
